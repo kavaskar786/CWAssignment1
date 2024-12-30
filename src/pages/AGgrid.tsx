@@ -1,7 +1,7 @@
 import { AgGridReact } from "ag-grid-react";
 import { AllCommunityModule, ModuleRegistry } from "ag-grid-community";
 import { useMemo, useState } from "react";
-import type { ColDef } from "ag-grid-community";
+import { ColDef, ColGroupDef } from "ag-grid-community";
 import "ag-grid-community/styles/ag-theme-quartz.css";
 import Cell from "../components/Cell";
 
@@ -240,7 +240,7 @@ const AGgrid = () => {
   ]);
 
   // Column Definitions: Defines the columns to be displayed.
-  const [colDefs] = useState<ColDef[]>([
+  const [colDefs] = useState<(ColDef | ColGroupDef)[]>([
     {
       field: "make",
       cellRenderer: Cell,
