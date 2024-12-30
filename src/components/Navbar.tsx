@@ -5,6 +5,9 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const handleClick = () => {
+    setIsOpen(false);
+  };
   return (
     <div className="bg-[#212835] w-full text-white shadow-2xl">
       <div className="w-[85%] mx-auto flex items-center justify-between h-[8vh] ">
@@ -14,12 +17,12 @@ const Navbar = () => {
             isOpen ? "top-[9%]" : "top-[-100%]"
           } w-full bg-[#475570] rounded-2xl text-white md:static md:min-h-fit md:flex-row md:bg-[#00000000] z-10`}
         >
-          <div className="">
+          <div className="" onClick={handleClick}>
             <NavLink to="/">
               <p>AG gird</p>
             </NavLink>
           </div>
-          <div className="">
+          <div className="" onClick={handleClick}>
             <NavLink to="charts">
               <p>Highcharts</p>
             </NavLink>
