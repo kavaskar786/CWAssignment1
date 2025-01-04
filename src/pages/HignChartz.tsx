@@ -55,16 +55,16 @@ const HignChartz = () => {
         Highcharts Paractice
       </h1>
       <div className="flex items-center justify-center gap-4 flex-wrap">
-        <div className=" w-[40vh] md:w-[70vh] h-[51.3vh] rounded-2xl overflow-hidden  shadow-2xl shadow-[#46586e]">
+        <div className="  md:w-[70vh] h-[51.3vh] rounded-2xl overflow-hidden  shadow-2xl shadow-[#46586e]">
           <LineChart />
         </div>
-        <div className="w-[40vh] md:w-[70vh] h-[51.3vh] rounded-2xl overflow-hidden shadow-2xl shadow-[#46586e]">
+        <div className=" md:w-[70vh] h-[51.3vh] rounded-2xl overflow-hidden shadow-2xl shadow-[#46586e]">
           <ColumnChart />
         </div>
-        <div className="w-[40vh] md:w-[70vh] h-[51.3vh] rounded-2xl overflow-hidden shadow-2xl shadow-[#46586e]">
+        <div className=" md:w-[70vh] h-[51.3vh] rounded-2xl overflow-hidden shadow-2xl shadow-[#46586e]">
           <PieChart />
         </div>
-        <div className="w-[40vh] md:w-[70vh] h-[51.3vh] rounded-2xl overflow-hidden shadow-2xl shadow-[#46586e]">
+        <div className=" md:w-[70vh] h-[51.3vh] rounded-2xl overflow-hidden shadow-2xl shadow-[#46586e]">
           <AreaChart />
         </div>
       </div>
