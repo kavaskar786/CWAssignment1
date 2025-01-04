@@ -17,12 +17,12 @@ const Navbar = () => {
             isOpen ? "top-[9%]" : "top-[-100%]"
           } w-full bg-[#475570] rounded-2xl text-white md:static md:min-h-fit md:flex-row md:bg-[#00000000] z-10`}
         >
-          <div className="" onClick={handleClick}>
+          <div className="underline" onClick={handleClick}>
             <NavLink to="/">
               <p>AG gird</p>
             </NavLink>
           </div>
-          <div className="" onClick={handleClick}>
+          <div className="underline" onClick={handleClick}>
             <NavLink to="charts">
               <p>Highcharts</p>
             </NavLink>

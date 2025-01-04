@@ -1,4 +1,5 @@
 import AreaChart from "../components/AreaChart";
+import ChartContainer from "../components/ChartContainer";
 import ColumnChart from "../components/ColumnChart";
 import LineChart from "../components/LineChart";
 import PieChart from "../components/PieChart";
@@ -48,27 +49,27 @@ Highcharts.setOptions({
     },
   },
 });
-const HignChartz = () => {
-  return (
-    <div className="min-h-[92vh] flex items-center justify-center flex-col ">
-      <h1 className="font-title text-white text-2xl md:text-4xl mb-10">
-        Highcharts Paractice
-      </h1>
-      <div className="flex items-center justify-center gap-4 flex-wrap">
-        <div className="  md:w-[70vh] h-[51.3vh] rounded-2xl overflow-hidden  shadow-2xl shadow-[#46586e]">
-          <LineChart />
-        </div>
-        <div className=" md:w-[70vh] h-[51.3vh] rounded-2xl overflow-hidden shadow-2xl shadow-[#46586e]">
-          <ColumnChart />
-        </div>
-        <div className=" md:w-[70vh] h-[51.3vh] rounded-2xl overflow-hidden shadow-2xl shadow-[#46586e]">
-          <PieChart />
-        </div>
-        <div className=" md:w-[70vh] h-[51.3vh] rounded-2xl overflow-hidden shadow-2xl shadow-[#46586e]">
-          <AreaChart />
-        </div>
-      </div>
+
+const HignChartz = () => (
+  <div className="min-h-[92vh] flex items-center justify-center flex-col">
+    <h1 className="font-title text-white text-2xl md:text-4xl mb-10">
+      Highcharts Practice
+    </h1>
+    <div className="flex items-center justify-center gap-4 flex-wrap">
+      <ChartContainer ariaLabel="Line Chart">
+        <LineChart />
+      </ChartContainer>
+      <ChartContainer ariaLabel="Column Chart">
+        <ColumnChart />
+      </ChartContainer>
+      <ChartContainer ariaLabel="Pie Chart">
+        <PieChart />
+      </ChartContainer>
+      <ChartContainer ariaLabel="Area Chart">
+        <AreaChart />
+      </ChartContainer>
     </div>
-  );
-};
+  </div>
+);
+
 export default HignChartz;
